@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Aula 8 - JavaScript - While, OnMouseOver e OnMouseOut</title>
+
+<script type="text/javascript" src="funcoes-mascaras.js"></script>
+
+<script type="text/javascript">
+	/*
+	//Exemplo utilizando o WHILE - Verifica se o acertou o numero da sorte utilizando
+	var sorte = 30;
+	var numero = 0;
+	
+	while(numero != sorte) {
+		numero = window.prompt("Digite o numero da sorte:");
+	}*/
+	
+	//Função que seta um novo valor no src da tag da imagem, modificando a foto na acao onmouseover
+	function changePhoto1() {
+		document.getElementById("foto").setAttribute("src", "desert.jpg");
+	}
+	//Função que seta um novo valor no src da tag da imagem, modificando a foto na acao onmouseout
+	function changePhoto2() {
+		document.getElementById("foto").setAttribute("src", "lighthouse.jpg");
+	}
+	
+</script>
+
+</head>
+
+<body>
+	<img src="desert.jpg" width="250" heigth="250" id="foto" onmouseover="changePhoto2();" onmouseout="changePhoto1();">
+</body>
+
+</html>

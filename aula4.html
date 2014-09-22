@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Aula 4 - JavaScript</title>
+
+	<script type="text/javascript">
+
+	//Exemplo onde se calcula a nota e mostra o resultado Aprovado ou Reprovado para o aluno.
+	var nota1 = window.prompt("Digite a nota 1: ");
+	var nota2 = window.prompt("Digite a nota 2: ");
+	var nota3 = window.prompt("Digite a nota 3: ");
+	var nota4 = window.prompt("Digite a nota 4: ");
+
+	var resultado = ( parseInt(nota1) + parseInt(nota2) + parseInt(nota3) + parseInt(nota4) ) / 4;
+	
+	/*
+	//exemplo aprovado ou reprovado utilizando IF e ELSE
+	if(resultado > 5.99) {
+		alert('Voce foi aprovado! Sua nota final foi: ' + resultado);
+	} else {
+		alert('Voce foi reprovado! Sua nota final foi: ' + resultado);
+	}*/
+
+	//exemplo aprovado, recuperacao ou reprovado utilizando ELSE IF
+	if(resultado <= 4) {
+		alert('Voce foi reprovado! Sua nota final foi: ' + resultado);
+	} else if( (resultado > 4) && (resultado < 7) ){
+		alert('Voce esta em recuperacao! Sua nota final foi: ' + resultado);
+	} else {
+		alert('Voce foi aprovado! Sua nota final foi: ' + resultado);
+	}
+
+	</script>
+
+	<body>
+		<h1>Curso de JavaScript - IF, ELSE, ELSE IF, &&, < , ></h1>
+	</body>
+</head>
+</html>

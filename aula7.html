@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Aula 6 - JavaScript</title>
+	<!-- As funcoes JavaScript em um arquivo separado para facilitar a manutençao -->
+	<script type="text/javascript" src="funcoes-mascaras.js"></script>
+
+	<h2>Curso de JavaScript - Arquivo JS</h2>
+
+	<body>
+		<h3>Cadastro</h3>
+		Nome: <input type="text" />
+		<br/><br/>
+		Data de Nascimento: <input type="text" id="txtData" maxlength="10" onkeyup="mask_date();"/>
+		<br/><br/>
+		CEP: <input type="text" id="txtCep" maxlength="9" onkeyup="mask_cep();"/>
+		<br/><br/>
+		Telefone: <input type="text" id="txtFone" maxlength="13" onkeyup="mask_fone();"/>
+		<br/><br/>
+		<input type="button" value="Cadastrar">
+		
+	</body>
+</head>
+</html>
